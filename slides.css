@@ -4,8 +4,14 @@
 .smallest {
   font-size: 0.55em;
 }
+.half {
+  width: 70%;
+}
 iframe {
   border: 1px solid #aaa;
+}
+#cover {
+  text-align: right;
 }
 #cover:after {
   opacity: 0;
@@ -13,18 +19,20 @@ iframe {
 #cover h2 {
   margin: 0;
   color: #fff;
-  text-align: left;
-  font-size: 48px;
+  font-size: 80px;
   display: inline-block;
-  max-width: 70%;
+  max-width: 80%;
+  text-align: center;
+  text-shadow: 0 0 40px #000, 0 0 40px #000, 0 0 40px #000, 0 0 40px #000, 0 0 40px #000, 0 0 40px #000, 0 0 40px #000;
 }
 #cover p {
-  margin: 250px 0 0;
-  text-align: left;
+  margin: 300px 0 0;
+  text-align: right;
   color: #fff;
   font-size: 24px;
   opacity: 0.75;
   line-height: 1.4;
+  text-shadow: 0 0 20px #000, 0 0 20px #000, 0 0 20px #000, 0 0 20px #000, 0 0 20px #000;
 }
 #cover p a {
   color: #fff;
@@ -66,7 +74,7 @@ iframe {
   width: 150px;
   background-color: #fff;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .logo + .logo {
   margin-left: 50px;

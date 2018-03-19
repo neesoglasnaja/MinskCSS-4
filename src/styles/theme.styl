@@ -1,15 +1,22 @@
 main-color = #1471B6
 important-color = #a11212
 
+.shower.full
+	background-color: #111
+
 .slide::after
-	background main-color
+	color main-color
+	background none
 	height 75px
+	right 20px
 .slide::before
 	position absolute
 	top: 75px;
 	right: 100px;
 	height 50px
 .slide
+	padding-top 60px
+	padding-left 60px
 	h2
 		color main-color
 	.formula
@@ -101,9 +108,16 @@ important-color = #a11212
 			&.shout
 				width auto
 				margin-left 100px
+				margin-top 200px
 				padding-top 20px
 				padding-bottom 20px
-				font-size 120px
+				font-size 48px
+	&.capture
+		h2
+			color: #ffffff
+			font-size 64px;
+			margin-top 250px
+			text-shadow 0 0 30px #000
 	h2 .label
 		color #FFF
 		padding 10px 40px
@@ -115,6 +129,10 @@ important-color = #a11212
 		text-align center
 		img
 			max-width 100%
+
+	p.quote
+		text-align center
+		font-style italic
 		
 	&.white
 		p

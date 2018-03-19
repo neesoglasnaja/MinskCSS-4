@@ -3,7 +3,7 @@ include ./blocks/cover.jade
 include ./blocks/quote.jade
 include ./blocks/frame.jade
 
-- var title = "И вот я - верстальщик. Что&nbsp;дальше?"
+- var title = "И вот я &mdash; верстальщик. Что&nbsp;дальше?"
 
 doctype html
 html(lang='ru')
@@ -18,12 +18,12 @@ html(lang='ru')
   body.shower.list
     header.caption
       h1 !{title}
-    +slide({name: 'cover', header: title, classes:'cover'})
+    +slide({name: 'cover', header: title, classes:'cover '})
       p Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
       +cover('pictures/cover.jpg')
-    +slide({header: "Кто я?", classes: "label-header white"})
+    +slide({header: "Кто я?", classes: "white"})
       ul
         li Глава отдела фронтенда, LOVATA
         li Full-stack MEAN разработчик
@@ -32,76 +32,89 @@ html(lang='ru')
         img.logo(src="pictures/minskjs.png")
         img.logo(src="pictures/css-minsk-js.svg")
       +cover('pictures/about-cover.jpg')
-    +slide({header: "Есть верстальщики-новички?", classes: "label-header"})
+    +slide({header: "Есть верстальщики-новички?", classes: ""})
       +cover('pictures/deadline.jpg')
-    +slide({header: "", classes: "label-header"})
-      +cover('pictures/dream.png')
-    +slide({header: "Мир самонадеянных интровертов", classes: "label-header"})
-    +slide({header: "Глава 1. Тыжпрограммист", shout: true, classes: "label-header"})
+    +slide({header: "Глава 1. Тыжпрограммист", shout: true, classes: "center capture"})
       +cover('pictures/super-programmer.jpg')
-    +slide({header: "Глава 1.1 Верстка", classes: "label-header"})
+    +slide({header: "Верстальщик", classes: ""})
       p
         a(href="http://krekotun.ru/ui-developer-skills/", target="_blank") Что должен знать HTML-верстальщик
-    +slide({header: "Глава 1.2 Фронтенд-разработчик", classes: "label-header"})
+      +cover('pictures/markup.jpg')
+    +slide({header: "Фронтенд-разработчик", classes: ""})
       p
         a(href="https://github.com/kamranahmedse/developer-roadmap#-front-end-roadmap", target="_blank") Как стать фронтендером в 2018 году
         |  (
-        a(href="https://habrahabr.ru/company/netologyru/blog/328426/", target="_blank") перевод
+        a(href="https://habrahabr.ru/company/netologyru/blog/328426/", target="_blank") RU
         | )
-    +slide({header: "Глава 1.3 Истина где-то рядом", classes: "label-header"})
+      +cover('pictures/frontend.jpg')
+    +slide({header: "Истина где-то рядом", classes: ""})
+      ul.half
+        li.next Другие языки, подходы и парадигмы
+          +cover('pictures/other/languages.jpg')
+        li.next Мобильная/десктопная разработка
+          +cover('pictures/other/mobile.jpg')
+        li.next Ops/DevOps
+          +cover('pictures/other/devops.jpg')
+        li.next Железо и IoT
+          +cover('pictures/other/iot.jpg')
+        li.next Дизайн и UX, фото и видео
+          +cover('pictures/other/ux.jpg')
+        li.next BA и QA
+          +cover('pictures/other/QA.jpg')
+        li.next Менеджмент и управление проектами
+          +cover('pictures/other/management.jpg')
+    +slide({header: "Глава 2. Профессиональная этика", shout: true, classes: "center capture"})
+      +cover('pictures/ethics.jpg')
+    +slide({header: "", classes: "center"})
+      h2 Вы отвечаете за тот код, который вы пишите,
+        br
+        | и те последствия, которые несут его изменения
+    +slide({header: "Ответственность", classes: ""})
       ul
-        li Другие языки программирования, подходы и парадигмы
-        li Мобильная/нативная разработка
-        li Ops/DevOps
-        li Железо и IoT
-        li Дизайн и UX, фото и видео
-        li BA и QA
-        li Менеджмент и управление проектами
-    +slide({header: "Глава 2. Профессиональная этика", shout: true, classes: "label-header"})
-    +slide({header: "Глава 2.1 Ответственность", classes: "label-header"})
-      p Вы отвечаете за тот код, который вы пишите, и те последствия, которые несут его изменения
-    +slide({header: "Глава 2.1 Ответственность", classes: "label-header"})
+        li.next Помните о возможной цене ошибки
+          +cover('pictures/responsibility/price.jpg')
+        li.next Тестируйте и перепроверяйте
+          +cover('pictures/responsibility/checklist.jpg')
+    +slide({header: "", classes: "center"})
+      h2 За вашу карьеру отвечаете вы сами, а не работодатель
+    +slide({header: "Цели и мотивация", classes: ""})
       ul
-        li Помните о возможной цене ошибки
-        li Тестируйте и перепроверяйте свою работу
-    +slide({header: "Глава 2.2 Цели и мотивация", classes: "label-header"})
-      p За вашу карьеру отвечаете вы сами, а не работодатель
-    +slide({header: "Глава 2.2 Цели и мотивация", classes: "label-header"})
-      ul
-        li Непрерывное обучение - регулярность
-        li Тренировки (40+20)
-        li Роадмап - будьте последовательны (https://github.com/kamranahmedse/developer-roadmap#-front-end-roadmap)
-    +slide({header: "Глава 2.3 Продуктивность", classes: "label-header"})
+        li.next Непрерывное обучение
+          +cover('pictures/motivation/learn.jpg')
+        li.next Тренировки (40+20)
+          +cover('pictures/motivation/learn.jpg')
+        li.next Роадмап - будьте последовательны
+          +cover('pictures/motivation/learn.jpg')
+    +slide({header: "Продуктивность", classes: ""})
       p Возьмите время под контроль
-    +slide({header: "Глава 2.3 Продуктивность", classes: "label-header"})
+    +slide({header: "Продуктивность", classes: ""})
       ul
-        li Трекайте время
-        li Делайте анализ
-        li Перестаньте системно перерабатывать
-    +slide({header: "Глава 2.4 Soft skills", classes: "label-header"})
+        li.next Трекайте время
+          +cover('pictures/time/track.jpg')
+        li.next Делайте анализ
+          +cover('pictures/time/analyze.jpg')
+        li.next Перестаньте системно перерабатывать
+          +cover('pictures/time/hardworking.jpg')
+    +slide({header: "Soft skills", classes: ""})
       p Все, что сложно измерить и стандартизировать
-    +slide({header: "Глава 2.4 Soft skills", classes: "label-header"})
+      p (https://training.simplicable.com/training/new/87-soft-skills)
+    +slide({header: "Soft skills", classes: ""})
       ul
-        li Книга "Soft skills" (https://training.simplicable.com/training/new/87-soft-skills)
-        li Не будьте м****ом (https://t.me/some_pm_ghost/52)
-        li Выходите из зоны комфорта
-        li Будьте видимым
-    +slide({header: "Глава 3. Все остальное", classes: "label-header"})
-    +slide({header: "Глава 3.1 Здоровье и спорт", classes: "label-header"})
+        li.next Книга "Soft skills" 
+          +cover('pictures/soft-skills/book.jpg')
+        li.next Выходите из зоны комфорта
+        li.next Будьте видимым
+    +slide({header: "Глава 3. Выйти из матрицы", shout: true, classes: "center capture"})
+      +cover('pictures/matrix.jpg')
+    +slide({header: "Здоровье и спорт", classes: ""})
       p Займитесь своим здоровьем и найдите себе активное хобби
-    +slide({header: "Глава 3.2 Путешествия и новые впечатления", classes: "label-header"})
-
-      ul
-        li Займитесь своим здоровьем
-        li Будьте активным
-        li Ищите вдохновение
-        li Уделяйте время своим хобби
-        li Общайтесь с людьми и смотрите на мир
-    +slide({header: "Ссылки на тему", classes: "label-header"})
+    +slide({header: "Путешествия и новые впечатления", classes: ""})
+    +slide({header: "Общение и нетворкинг", classes: ""})
+    +slide({header: "Ссылки на тему", classes: ""})
       ul
         li https://wsd.events/2017/11/04/pres/youth-front/
         li https://bespoyasov.ru/front-not-pain/#preface
-    +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover label-header'})
+    +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover '})
       p.end-link
         a.bigger(href="http://bit.ly/MinskCSS-ETA" target="_blank") bit.ly/MinskCSS-ETA
         br

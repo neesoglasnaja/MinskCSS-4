@@ -34,19 +34,29 @@ html(lang='ru')
       +cover('pictures/about-cover.jpg')
     +slide({header: "Есть верстальщики-новички?", classes: ""})
       +cover('pictures/deadline.jpg')
-    +slide({header: "Глава 1. Тыжпрограммист", shout: true, classes: "center capture"})
+    +slide({header: "Тыжпрограммист", shout: true, classes: "center capture"})
       +cover('pictures/super-programmer.jpg')
     +slide({header: "Верстальщик", classes: ""})
       p
         a(href="http://krekotun.ru/ui-developer-skills/", target="_blank") Что должен знать HTML-верстальщик
+      div.next.warning
       +cover('pictures/markup.jpg')
     +slide({header: "Фронтенд-разработчик", classes: ""})
+      ul
+        li
+          a(href="https://github.com/kamranahmedse/developer-roadmap#-front-end-roadmap", target="_blank") Как стать фронтендером в 2018 году
+          |  (
+          a(href="https://habrahabr.ru/company/netologyru/blog/328426/", target="_blank") RU
+          | )
+        li
+          a(href="https://medium.freecodecamp.org/from-zero-to-front-end-hero-part-1-7d4f7f0bff02", target="_blank") От нуля до героя фронтенда
+          |  (
+          a(href="https://medium.com/russian/%D0%BE%D1%82-%D0%BD%D1%83%D0%BB%D1%8F-%D0%B4%D0%BE-%D0%B3%D0%B5%D1%80%D0%BE%D1%8F-front-enda-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-f524d668f328", target="_blank") RU
+          | )
+        li
+          a(href="https://medium.com/russian/frontend-dev-%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B8%D0%B9-%D0%BF%D0%BB%D0%BE%D1%85%D0%BE%D0%B9-%D0%B7%D0%BB%D0%BE%D0%B9-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B8%D0%B9-%D0%BF%D1%83%D1%82%D1%8C-865b640d5d18", target="_blank") Frontend Dev: хороший, плохой, злой
       p
-        a(href="https://github.com/kamranahmedse/developer-roadmap#-front-end-roadmap", target="_blank") Как стать фронтендером в 2018 году
-        |  (
-        a(href="https://habrahabr.ru/company/netologyru/blog/328426/", target="_blank") RU
-        | )
-      +cover('pictures/frontend.jpg')
+      +cover('pictures/frontend.jpg', target="_blank")
     +slide({header: "Истина где-то рядом", classes: ""})
       ul.half
         li.next Другие языки, подходы и парадигмы
@@ -61,6 +71,8 @@ html(lang='ru')
           +cover('pictures/other/ux.jpg')
         li.next BA и QA
           +cover('pictures/other/QA.jpg')
+        li.next SEO и SMM
+          +cover('pictures/other/smm.jpg')
         li.next Менеджмент и управление проектами
           +cover('pictures/other/management.jpg')
     +slide({header: "Глава 2. Профессиональная этика", shout: true, classes: "center capture"})

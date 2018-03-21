@@ -59,7 +59,7 @@ html(lang='ru')
       +cover('pictures/frontend.jpg', target="_blank")
     +slide({header: "Истина где-то рядом", classes: ""})
       ul.half
-        li.next Другие языки, подходы и парадигмы
+        li Другие языки, подходы и парадигмы
           +cover('pictures/other/languages.jpg')
         li.next Мобильная/десктопная разработка
           +cover('pictures/other/mobile.jpg')
@@ -75,8 +75,61 @@ html(lang='ru')
           +cover('pictures/other/smm.jpg')
         li.next Менеджмент и управление проектами
           +cover('pictures/other/management.jpg')
-    +slide({header: "Глава 2. Профессиональная этика", shout: true, classes: "center capture"})
-      +cover('pictures/ethics.jpg')
+    +slide({header: "Ищем знания", classes: ""})
+      ul
+        li Теория
+          ul
+            li.next Книги
+            li.next Статьи
+            li.next Видео (конференции, мастер-классы)
+            li.next Аудио (подкасты)
+            li.next Телеграм-каналы
+            li.next Соц. сети (twitter, facebook)
+      +cover('pictures/motivation/learn.jpg')
+    +slide({header: "Ищем знания", classes: ""})
+      ul
+        li Практика
+          ul
+            li.next Онлайн-курсы
+            li.next Интерактивные курсы
+            li.next Open source
+            li.next Челленджи
+            li.next "Падаванство"
+      +cover('pictures/motivation/code.jpg')
+    +slide({})
+      +cover('pictures/cover.jpg')
+    +slide({header: "В чем проблема?"})
+      ul
+        li.next Освоение технологий хаотично
+          +cover('pictures/motivation/haos.jpg')
+        li.next Знания поверхностны
+          +cover('pictures/motivation/nothing.jpg')
+        li.next Нет обратной связи
+          +cover('pictures/motivation/bad.jpg')
+    +slide({header: "", shout: true, classes: "center capture"})
+      h2 Меня всему обучат на работе
+      +cover('pictures/myth.jpg')
+    +slide({header: "", shout: true, classes: "center capture"})
+      h2 За ваше развитие отвечаете вы,
+        span а не работодатель
+      +cover('pictures/reality.jpg')
+    +slide({header: "Шаг 1. Составить план", classes: ""})
+      ul
+        li.next Роадмап &mdash; будьте последовательны
+        li.next Ставьте определенные сроки
+      +cover('pictures/motivation/roadmap.jpg')
+    +slide({header: "Шаг 2. Пишите код", classes: ""})
+      ul
+        li.next 40 часов на работе
+        li.next + вне работы 
+          span.next (~20 часов)
+      +cover('pictures/motivation/code-more.jpg')
+    +slide({header: "Шаг 3. Обратная связь", classes: ""})
+      ul
+        li.next Найдите наставника
+        li.next Просите код-ревью
+        li.next Делайте код-ревью самостоятельно
+      +cover('pictures/motivation/review.jpg')
     +slide({header: "", classes: "center"})
       h2 Вы отвечаете за тот код, который вы пишите,
         br
@@ -85,18 +138,7 @@ html(lang='ru')
       ul
         li.next Помните о возможной цене ошибки
           +cover('pictures/responsibility/price.jpg')
-        li.next Тестируйте и перепроверяйте
-          +cover('pictures/responsibility/checklist.jpg')
-    +slide({header: "", classes: "center"})
-      h2 За вашу карьеру отвечаете вы сами, а не работодатель
-    +slide({header: "Цели и мотивация", classes: ""})
-      ul
-        li.next Непрерывное обучение
-          +cover('pictures/motivation/learn.jpg')
-        li.next Тренировки (40+20)
-          +cover('pictures/motivation/learn.jpg')
-        li.next Роадмап - будьте последовательны
-          +cover('pictures/motivation/learn.jpg')
+        li.next Тестируйте и перепроверяйте    
     +slide({header: "Продуктивность", classes: ""})
       p Возьмите время под контроль
     +slide({header: "Продуктивность", classes: ""})

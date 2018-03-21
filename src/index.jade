@@ -130,45 +130,43 @@ html(lang='ru')
         li.next Просите код-ревью
         li.next Делайте код-ревью самостоятельно
       +cover('pictures/motivation/review.jpg')
-    +slide({header: "", classes: "center"})
-      h2 Вы отвечаете за тот код, который вы пишите,
-        br
-        | и те последствия, которые несут его изменения
+    +slide({header: "Продуктивность", classes: ""})
+      ul
+        li.next Логгируйте свое время
+        li.next Делайте анализ
+        li.next Перестаньте системно перерабатывать
+      +cover('pictures/time.jpg')
     +slide({header: "Ответственность", classes: ""})
       ul
+        li Вы отвечаете за код, который пишите
         li.next Помните о возможной цене ошибки
-          +cover('pictures/responsibility/price.jpg')
-        li.next Тестируйте и перепроверяйте    
-    +slide({header: "Продуктивность", classes: ""})
-      p Возьмите время под контроль
-    +slide({header: "Продуктивность", classes: ""})
-      ul
-        li.next Трекайте время
-          +cover('pictures/time/track.jpg')
-        li.next Делайте анализ
-          +cover('pictures/time/analyze.jpg')
-        li.next Перестаньте системно перерабатывать
-          +cover('pictures/time/hardworking.jpg')
-    +slide({header: "Soft skills", classes: ""})
-      p Все, что сложно измерить и стандартизировать
-      p (https://training.simplicable.com/training/new/87-soft-skills)
-    +slide({header: "Soft skills", classes: ""})
-      ul
-        li.next Книга "Soft skills" 
-          +cover('pictures/soft-skills/book.jpg')
-        li.next Выходите из зоны комфорта
-        li.next Будьте видимым
-    +slide({header: "Глава 3. Выйти из матрицы", shout: true, classes: "center capture"})
+        li.next Тестируйте и перепроверяйте
+        li.next Будьте "здоровым" перфекционистом
+      +cover('pictures/responsibility.jpg')
+    +slide({header: "Выйти из матрицы", shout: true, classes: "center capture"})
       +cover('pictures/matrix.jpg')
-    +slide({header: "Здоровье и спорт", classes: ""})
-      p Займитесь своим здоровьем и найдите себе активное хобби
+    +slide({header: "Soft skills", classes: ""})
+      +cover('pictures/soft-skills.jpg')
+    +slide({header: "Soft skills", classes: ""})
+      ul
+        li Книга "Путь программиста" 
+        li.next Выходите из зоны комфорта
+        li.next Будьте заметным
+      +cover('pictures/book.jpg')
+    +slide({header: "Здоровье и спорт", classes: "white-header"})
+      +cover('pictures/health.jpg')
     +slide({header: "Путешествия и новые впечатления", classes: ""})
-    +slide({header: "Общение и нетворкинг", classes: ""})
+      +cover('pictures/travel.jpg')
+    +slide({header: "Общение и нетворкинг", classes: "white-header"})
+      +cover('pictures/networking.jpg')
+    +slide({header: "", classes: "white"})
+      +cover('pictures/inspiration.jpg')
     +slide({header: "Ссылки на тему", classes: ""})
       ul
+        li (https://training.simplicable.com/training/new/87-soft-skills)
         li https://wsd.events/2017/11/04/pres/youth-front/
         li https://bespoyasov.ru/front-not-pain/#preface
-    +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover '})
+    +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover'})
       p.end-link
         a.bigger(href="http://bit.ly/MinskCSS-ETA" target="_blank") bit.ly/MinskCSS-ETA
         br

@@ -17,6 +17,9 @@
   padding-top: 60px;
   padding-left: 60px;
 }
+.slide.white-header h2 {
+  color: #fff;
+}
 .slide h2 {
   color: #1471b6;
 }

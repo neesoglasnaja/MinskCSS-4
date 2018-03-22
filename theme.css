@@ -136,7 +136,7 @@
   color: #fff;
   font-size: 64px;
   margin-top: 250px;
-  text-shadow: 0 0 30px #000;
+  text-shadow: 0 0 30px #000, 0 0 30px #000, 0 0 30px #000, 0 0 30px #000;
 }
 .slide h2 .label {
   color: #fff;

@@ -26,7 +26,7 @@ html(lang='ru')
     +slide({header: "Кто я?", classes: "white"})
       ul
         li Глава отдела фронтенда, LOVATA
-        li Full-stack MEAN разработчик
+        li Full-stack (Node.js) разработчик
       p
         img.logo(src="pictures/minskcss.png")
         img.logo(src="pictures/minskjs.png")
@@ -82,8 +82,11 @@ html(lang='ru')
             li.next Книги
             li.next Статьи
             li.next Видео (конференции, мастер-классы)
-            li.next Аудио (подкасты)
-            li.next Телеграм-каналы
+            li.next Аудио (
+              a(href="https://t.me/itradiostream", target="_blank") подкасты
+              | )
+            li.next 
+              a(href="https://t.me/forwebdev/3464", target="_blank") Телеграм-каналы
             li.next Соц. сети (twitter, facebook)
       +cover('pictures/motivation/learn.jpg')
     +slide({header: "Ищем знания", classes: ""})
@@ -117,6 +120,7 @@ html(lang='ru')
       ul
         li.next Роадмап &mdash; будьте последовательны
         li.next Ставьте определенные сроки
+        li.next Следите за прогрессом
       +cover('pictures/motivation/roadmap.jpg')
     +slide({header: "Шаг 2. Пишите код", classes: ""})
       ul
@@ -130,11 +134,27 @@ html(lang='ru')
         li.next Просите код-ревью
         li.next Делайте код-ревью самостоятельно
       +cover('pictures/motivation/review.jpg')
+    +slide({header: "Выйти из матрицы", shout: true, classes: "center capture"})
+      +cover('pictures/matrix.jpg')
+    +slide({header: "Soft skills", classes: ""})
+      a.bottom(href="https://training.simplicable.com/training/new/87-soft-skills", traget="_blank") 87 soft skills
+      +cover('pictures/soft-skills.jpg')
+    +slide({header: "Soft skills", classes: ""})
+      p "Путь программиста", Джон Сонмез
+      +cover('pictures/book.jpg')
     +slide({header: "Продуктивность", classes: ""})
       ul
-        li.next Логгируйте свое время
+        li Логгируйте свое время
         li.next Делайте анализ
         li.next Перестаньте системно перерабатывать
+      ul.next
+        li
+          a(href="https://youtu.be/oBa5Xz8hzeA", target="_blank") Оценка фронтенда: перестаем тыкать
+            br
+            | пальцем в небо
+          |  (Youtube)
+        li
+          a(href="https://habrahabr.ru/post/75903/", target="_blank") Десять смертных грехов в оценке
       +cover('pictures/time.jpg')
     +slide({header: "Ответственность", classes: ""})
       ul
@@ -143,16 +163,6 @@ html(lang='ru')
         li.next Тестируйте и перепроверяйте
         li.next Будьте "здоровым" перфекционистом
       +cover('pictures/responsibility.jpg')
-    +slide({header: "Выйти из матрицы", shout: true, classes: "center capture"})
-      +cover('pictures/matrix.jpg')
-    +slide({header: "Soft skills", classes: ""})
-      +cover('pictures/soft-skills.jpg')
-    +slide({header: "Soft skills", classes: ""})
-      ul
-        li Книга "Путь программиста" 
-        li.next Выходите из зоны комфорта
-        li.next Будьте заметным
-      +cover('pictures/book.jpg')
     +slide({header: "Здоровье и спорт", classes: "white-header"})
       +cover('pictures/health.jpg')
     +slide({header: "Путешествия и новые впечатления", classes: ""})
@@ -163,12 +173,24 @@ html(lang='ru')
       +cover('pictures/inspiration.jpg')
     +slide({header: "Ссылки на тему", classes: ""})
       ul
-        li (https://training.simplicable.com/training/new/87-soft-skills)
-        li https://wsd.events/2017/11/04/pres/youth-front/
-        li https://bespoyasov.ru/front-not-pain/#preface
-    +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover'})
+        li
+          a(href="https://youtu.be/d3aLqdCAPOs", target="_blank") Что делать, если ты новичок фронтендер?
+          |  (Youtube)
+        li
+          a(href="https://youtu.be/G9hMm77B1dk", target="_blank") Фронтенд для новичка. Куда идти и что делать?
+          |  (Youtube)
+        li
+          a(href="https://bespoyasov.ru/front-not-pain", target="_blank") Фронтенд — это не больно!
+      ul
+        li "Идеальный программист", Роберт Мартин
+        li "Программист-фанатик", Чед Фоулер
+        li "Программист-прагматик", Дейв Томас и Энди Хант
+        li "Чистый код. Создание, анализ и рефакторинг", Роберт Мартин
+        li "Совершенный код", Стив Макконнелл
+        li "Мифический человеко-месяц", Фредерик Брукс
+    +slide({name: 'theend', header: "Вопросы?", classes: 'cover last'})
       p.end-link
-        a.bigger(href="http://bit.ly/MinskCSS-ETA" target="_blank") bit.ly/MinskCSS-ETA
+        a.bigger(href="http://bit.ly/MinskCSS-Junior" target="_blank") bit.ly/MinskCSS-Junior
         br
         | Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
